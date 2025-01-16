@@ -1,8 +1,16 @@
-let count = 0; // Initialize count to 0
+let count = 0;
+function resetFollowers(){
+    count = 0;
+    if (count == 0){
+        alert("Your instagram followers were reseted!");
+    }
+   displayCount();
+} // Initialize count to 0
 function increaseCount() {
   count++; // Increment the count by 1
   displayCount(); 
-  checkCountValue(); // Display the count
+  checkCountValue();
+ //resetFollowers(); // Display the count
 }
 function displayCount() {
 document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
